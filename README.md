@@ -1,22 +1,19 @@
 # ig-tools
-
 This project implements some hard rules to minimise losses on the IG trading platform.
 These rules put in place some non-negotiable limits that prevent large losses sometime incurred by placing emotional trades.
 We have usesd Azure functions, ran at scheduled intervals, to interact with the [IG Trading API](https://labs.ig.com/rest-trading-api-guide).
 
 ## Architecture
-
 All endpoints except TradingBot are trigger by a CRON schedule. They interact with the IG trading REST API endpoints.
 
 ![./ig-tools.png](./ig-tools.png)
 
-## How to deploy
 
+## How to deploy
 The Azure functions are currently deployed using the VSCode `Deploy to function app...` task.
 All required environment variables can be found in `config.py`.
 
 ## Learnings
-
 This project was created a couple of years ago, and there are (quite a) few things I would change if I was to rebuild this. Here are some of the things I think would make the most difference.
 
 ### Testing, of course
