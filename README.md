@@ -9,11 +9,12 @@ All endpoints except TradingBot are trigger by a CRON schedule. They interact wi
 ![./ig-tools.png](./ig-tools.png)
 
 
-## How to deploy
+
+## How to deploy  
 The Azure functions are currently deployed using the VSCode `Deploy to function app...` task.
 All required environment variables can be found in `config.py`.
 
-## Learnings
+## Learnings  
 This project was created a couple of years ago, and there are (quite a) few things I would change if I was to rebuild this. Here are some of the things I think would make the most difference.
 
 ### Testing, of course
